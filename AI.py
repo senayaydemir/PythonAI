@@ -7,3 +7,9 @@ def veritabaina_yaz(veriler):
     
     with open('C:\\Users\\SENAY\\Desktop\\PythonAI\\veritabani.json','w') as dosya:
         json.dump(veriler,dosya,indent=2)
+
+def chat_bot():
+
+
+    if __name__ =='__main__':
+        chat_bot()        
