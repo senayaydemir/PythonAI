@@ -1,1 +1,17 @@
- {}
+ {
+"sorular":[
+
+    {
+        "soru":"Türkiye'nin başkenti neresidir?",
+        "cevap":"Ankara"
+    },
+    {
+        "soru":"Türkiye'nin başkenti neresidir?",
+        "cevap":"Ankara"  
+    }
+
+
+
+
+]
+ }
