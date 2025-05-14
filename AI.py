@@ -9,7 +9,12 @@ def veritabaina_yaz(veriler):
         json.dump(veriler,dosya,indent=2)
 
 def chat_bot():
+ veritabani_yukle()
+while True :
+    soru =input("Siz:")
 
+    if soru =='Çık':
+        break
 
-    if __name__ =='__main__':
+if __name__ =='__main__':
         chat_bot()        
