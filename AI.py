@@ -14,7 +14,9 @@ def yakin_sonuc_bul(soru,sorular):
 
 def cevabini_bul(soru,veritabani):
     for sorucevaplar in veritabani["sorular"]:
-        
+        if sorucevaplar["soru"]==soru:
+            return sorucevaplar["cevap"]
+        return None
 
 def chat_bot():
  veritabani_yukle()
