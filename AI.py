@@ -12,6 +12,10 @@ def yakin_sonuc_bul(soru,sorular):
     eslesen=yakin_sonuclari_getir(soru,sorular,n=1,cutoff=0.6)
     return eslesen[0] if eslesen else None
 
+def cevabini_bul(soru,veritabani):
+    for sorucevaplar in veritabani["sorular"]:
+        
+
 def chat_bot():
  veritabani_yukle()
 while True :
