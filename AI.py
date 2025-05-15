@@ -8,6 +8,10 @@ def veritabaina_yaz(veriler):
     with open('C:\\Users\\SENAY\\Desktop\\PythonAI\\veritabani.json','w') as dosya:
         json.dump(veriler,dosya,indent=2)
 
+def yakin_sonuc_bul(soru,sorular):
+    eslesen=yakin_sonuclari_getir(soru,sorular,n=1,cutoff=0.6)
+    return eslesen[0] if eslesen else None
+
 def chat_bot():
  veritabani_yukle()
 while True :
