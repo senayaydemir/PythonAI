@@ -26,6 +26,10 @@ def chat_bot():
           if soru =='Çık':
               break
           gelen_sonuc = yakin_sonuc_bul(soru,[sorucevaplar["soru"]for sorucevaplar in veritabani["sorular"]])
+          if gelen_sonuc:
+               verilecek_cevap =cevabini_bul(gelen_sonuc,veritabani)
+               print(f"Bot:{verilecek_cevap}")
 
+               
 if __name__ =='__main__':
         chat_bot()        
