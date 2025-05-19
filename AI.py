@@ -19,12 +19,13 @@ def cevabini_bul(soru,veritabani):
         return None
 
 def chat_bot():
- veritabani_yukle()
-while True :
-    soru =input("Siz:")
+    veritabani = veritabani_yukle()
+    while True :
+          soru =input("Siz:")
 
-    if soru =='Çık':
-        break
+          if soru =='Çık':
+              break
+          gelen_sonuc = yakin_sonuc_bul(soru,[sorucevaplar["soru"]for sorucevaplar in veritabani["sorular"]])
 
 if __name__ =='__main__':
         chat_bot()        
