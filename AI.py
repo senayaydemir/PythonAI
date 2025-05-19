@@ -30,6 +30,7 @@ def chat_bot():
                verilecek_cevap =cevabini_bul(gelen_sonuc,veritabani)
                print(f"Bot:{verilecek_cevap}")
 
-               
+          else :
+               print("Bot:Bunu nasıl cevaplayacağımı bilmiyorum.Öğretir misiniz?")
 if __name__ =='__main__':
         chat_bot()        
