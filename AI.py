@@ -33,5 +33,10 @@ def chat_bot():
           else :
                print("Bot:Bunu nasıl cevaplayacağımı bilmiyorum.Öğretir misiniz?")
                yeni_cevap =input("Öğretmek için yazabilir veya geç diyebilirsiniz.")
+
+               if yeni_cevap !='geç':
+                    veritabani["sorular"].append({
+                         
+                    })
 if __name__ =='__main__':
         chat_bot()        
