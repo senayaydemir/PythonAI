@@ -39,5 +39,7 @@ def chat_bot():
                          "soru":soru,
                          "cevap":yeni_cevap
                     })
+                    veritabaina_yaz(veritabani)
+                    print("Bot:Teşekkürler ,sayenizde yeni bir şey öğrendim.")
 if __name__ =='__main__':
         chat_bot()        
