@@ -36,7 +36,8 @@ def chat_bot():
 
                if yeni_cevap !='geç':
                     veritabani["sorular"].append({
-                         
+                         "soru":soru,
+                         "cevap":yeni_cevap
                     })
 if __name__ =='__main__':
         chat_bot()        
