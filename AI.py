@@ -16,16 +16,18 @@ def cevabini_bul(soru,veritabani):
     for sorucevaplar in veritabani["sorular"]:
         if sorucevaplar["soru"]==soru:
             return sorucevaplar["cevap"]
-        return None
+    return None
 
 def chat_bot():
     veritabani = veritabani_yukle()
+    if "sorular" not in veritabani:
+        veritabani["sorular"] = []
     while True :
           soru =input("Siz:")
 
           if soru =='Çık':
               break
-          gelen_sonuc = yakin_sonuc_bul(soru,[sorucevaplar["soru"]for sorucevaplar in veritabani["sorular"]])
+          gelen_sonuc = yakin_sonuc_bul(soru,[sorucevaplar["soru"] for sorucevaplar in veritabani["sorular"]])
           if gelen_sonuc:
                verilecek_cevap =cevabini_bul(gelen_sonuc,veritabani)
                print(f"Bot:{verilecek_cevap}")
